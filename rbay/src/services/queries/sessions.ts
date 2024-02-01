@@ -22,7 +22,7 @@ export const saveSession = async (session: Session) => {
 const deserialize = (id: string, session: { [key: string]: string }) => {
     return {
         id,
-        userId: session.username,
+        userId: session.userId,
         username: session.username
     };
 };
